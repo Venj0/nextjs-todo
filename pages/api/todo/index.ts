@@ -7,7 +7,6 @@ export default ApiHandler({
 })
 
 async function create(req: NextApiRequest, res: NextApiResponse) {
-	console.log(req.query)
 	const response = await todoRepo.create(req.body)
 	if (response === 'Ok') res.status(200).json({ status: 'OK' })
 	else res.status(403).json({ message: response })
