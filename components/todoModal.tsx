@@ -44,7 +44,7 @@ export const TodoModal: FC<TodoModal> = ({ data, isOpen, handleClose, getList })
 	const [fetch, fetchStatus] = useQuery<BaseOkResponse, EditCreate>(isNew ? TodoServices.create : TodoServices.edit)
 
 	useEffect(() => {
-		if (data?.id !== todo.id) setTodo(() => data)
+		setTodo(data)
 	}, [isOpen])
 
 	const canSave = todo.title && todo.status && (!isNew ? todo.status !== data.status || todo.title !== data.title || todo.description !== data.description : true)

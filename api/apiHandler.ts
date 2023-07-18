@@ -7,6 +7,7 @@ type ApiHandler = (arg: { [K in ApiMethods]?: HandlerFunction }) => HandlerFunct
 
 export const ApiHandler: ApiHandler = (handler) => {
 	return async (req: NextApiRequest, res: NextApiResponse) => {
+		console.log(req.query)
 		const method = req.method?.toLowerCase() as ApiMethods
 		if (!handler?.[method]) return res.status(405).end(`Method ${req.method} Not Allowed`)
 
