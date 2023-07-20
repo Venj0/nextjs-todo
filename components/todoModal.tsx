@@ -1,4 +1,4 @@
-import { LoadingWrapper } from '@/components/loadingwrapper'
+import { LoadingWrapper } from '@/components/loadingwrapper/loadingwrapper'
 import { Notify } from '@/helpers/notify'
 import { useQuery } from '@/hooks/useQuery'
 import { BaseOkResponse, EditCreate, TodoServices } from '@/services/todo'

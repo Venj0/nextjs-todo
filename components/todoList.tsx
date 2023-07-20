@@ -1,5 +1,5 @@
-import { AddTodo } from '@/components/AddTodo'
-import { LoadingWrapper } from '@/components/loadingwrapper'
+import { AddTodo } from '@/components/addTodo/addTodo'
+import { LoadingWrapper } from '@/components/loadingwrapper/loadingwrapper'
 import { TodoItem } from '@/components/todoItem'
 import { useQuery } from '@/hooks/useQuery'
 import { TodoServices } from '@/services/todo'

@@ -1,4 +1,4 @@
-import { LoadingWrapper } from '@/components/loadingwrapper'
+import { LoadingWrapper } from '@/components/loadingwrapper/loadingwrapper'
 import { TodoModal } from '@/components/todoModal'
 import { getVisibleTime } from '@/helpers/getVisibleTime'
 import { Notify } from '@/helpers/notify'
